@@ -67,10 +67,9 @@
      * but it can be called by any other API
      */
     function getUnitTypes(){
-        let teste = "http://pesslapi.local.com/index.php/unittype/list";
-        let teste2 = "https://pesslexercise.herokuapp.com/index.php/unittype/list";
+        let paramURL = "https://pesslexercise.herokuapp.com/index.php/unittype/list";
         $.ajax({
-            url: teste2,
+            url: paramURL,
             type: "GET",
             crossDomain: true,
             dataType: "json"
