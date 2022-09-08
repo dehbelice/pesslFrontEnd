@@ -34,7 +34,7 @@
                 <div class="col-sm-4"> 
                     <div class="form-group">
                         <label>Value: </label>
-                        <input id="valueToConvert" class="form-control"  type="number" > 
+                        <input id="valueToConvert" class="form-control"  type="number" onkeypress="return onlynumber();"> 
                     </div>
                 </div>
                 <div class="col-sm-12 text-center"> 
@@ -196,7 +196,7 @@
         var theEvent = evt || window.event;
         var key = theEvent.keyCode || theEvent.which;
         key = String.fromCharCode( key );
-        var regex = /^[0-9.]+$/;
+        var regex = /^[0-9.+-]+$/;
         if( !regex.test(key) ) {
         theEvent.returnValue = false;
         if(theEvent.preventDefault) theEvent.preventDefault();
