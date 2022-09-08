@@ -34,7 +34,7 @@
                 <div class="col-sm-4"> 
                     <div class="form-group">
                         <label>Value: </label>
-                        <input id="valueToConvert" class="form-control"  type="number" onkeypress="return onlynumber();"> 
+                        <input id="valueToConvert" class="form-control"  type="number" > 
                     </div>
                 </div>
                 <div class="col-sm-12 text-center"> 
